@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <style>
+            body {
+                background-color: lightseagreen;
+                overflow: visible;
+            }
+
+           
+            .footprints1 {
+                position: absolute;
+              
+                clip-path: inset(50px 100px 0 50px);
+                transform: translateY(-50px);
+            }
+
+          
+            .footprints5 {
+                clip-path: inset(90px 100px 440px 830px);
+                transition: transform 0.3s ease;
+
+            }
+
+           
+            .footprints5:hover {
+                transform: scale(1.1);
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="footprints1" src="Untitled-5-1.gif" alt="image1">
+        <img class="footprints3" src="footprints1.gif" alt="image3">
+        <img class="footprints4" src="footprints4.gif" alt="image4">
+        <img class="footprints6" src="footprints7.png">
+        <a href="page3.html">
+            <img class="footprints5" src="footprints5.gif" alt="Clickable Image">
+        </a>
+    </body>
+</html>

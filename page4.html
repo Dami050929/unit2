@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style4.css">
+        <style>
+            .choice1, .choice2 {
+                position: absolute; /* 위치 조정 가능하도록 설정 */
+            }
+
+            .choice2 {
+                cursor: grab; /* 드래그 가능하다는 힌트를 주는 스타일 */
+            }
+        </style>
+    </head>
+    <body>
+        <img class="choice1" src="choice.gif">
+       
+        <img class="choice2" src="choice2.png" id="draggable">
+        <a href="page5.html">
+            <img class="choice3" src="choice3.gif">
+        </a>
+
+
+        <script>
+            const draggable = document.getElementById('draggable');
+            let isDragging = false;
+            let offsetX = 0, offsetY = 0;
+
+            draggable.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                offsetX = e.offsetX;
+                offsetY = e.offsetY;
+                draggable.style.cursor = 'grabbing'; // 드래그 중일 때 커서 변경
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    draggable.style.left = `${e.pageX - offsetX}px`;
+                    draggable.style.top = `${e.pageY - offsetY}px`;
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+                draggable.style.cursor = 'grab'; // 드래그 종료 시 커서 원상 복구
+            });
+        </script>
+    </body>
+</html>

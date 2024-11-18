@@ -1,0 +1,19 @@
+.path1 {
+    width: 1500px;
+    height: 800px;
+}
+.path2 {
+    width: 1400px;
+    height: 850px;
+    position: absolute;
+    left: 90%;
+    top: 0%;
+    transform: translateX(-90%);
+    
+}
+.path3 {
+   
+    top: 10px;
+    right: 15%;
+ 
+}

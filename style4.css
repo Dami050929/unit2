@@ -1,0 +1,38 @@
+.choice1 {
+    width: 1515px;
+    height: 900px;
+  
+}
+.choice2 {
+    width: 1390px;
+    height: 920px;
+    position: absolute;
+    top: 0%;
+    left:0%;
+    
+    
+    clip-path: inset(15px 640px 630px 120px);
+    transform: translateY(-15px);
+
+}
+body {
+    background-color: rgb(79, 69, 145);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.choice3 {
+    position: absolute;
+    left:73%;
+    top:5%;
+    
+    clip-path: inset(300px 120px 340px 70px); 
+    transition: transform 0.3s ease;
+ 
+}
+.choice3:hover {
+    transform: scale(1.1);
+   
+}

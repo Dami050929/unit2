@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 255, 121)
+}
+.confusion1 {
+    width: 1400px;
+    height: 830px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .confusion2 {
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    width: 300px;
+    transition: transform 0.3s ease;
+    clip-path: inset(0 0 0 70px);
+  }
+  .confusion2:hover {
+    transform: scale(1.1);
+   
+}
