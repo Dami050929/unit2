@@ -25,8 +25,8 @@ body {
   }
 .choice3 {
     position: absolute;
-    left:73%;
-    top:5%;
+    left:75%;
+    top:0%;
     
     clip-path: inset(300px 120px 340px 70px); 
     transition: transform 0.3s ease;
